@@ -15,8 +15,10 @@ The repository may use newer equivalent tooling. Vite is the current client tool
 | Application overview | Context available | `transcript.txt` describes posts and comments |
 | Project setup | Present | `blog/client`, `blog/posts`, and `blog/comments` exist |
 | Posts Service Creation, Lesson 13 | Complete | `blog/posts/index.js` implements the first service |
-| Testing the Posts Service, Lesson 14 | Current | Manual requests are stored in `blog/yaak-workspace` |
-| Implementing a Comments Service | Next | `blog/comments` has package setup, but no service source file yet |
+| Testing the Posts Service, Lesson 14 | Complete | Manual requests are stored in `blog/yaak-workspace` |
+| Implementing a Comments Service, Lesson 15 | Complete | `blog/comments/index.js` implements the isolated comments service |
+| Quick Comments Test, Lesson 16 | Current | Yaak requests test comment creation and retrieval |
+| Note on the React App | Next | The transcript introduces the React client before the next architecture problems |
 
 ## Course architecture being built
 

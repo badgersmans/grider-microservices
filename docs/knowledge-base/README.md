@@ -19,13 +19,14 @@ Do not add unrelated architecture, frameworks, or lessons. Record any necessary 
 | `course-map.md` | Current lesson position and the next course steps |
 | `architecture.md` | Services, ports, responsibilities, and request flow |
 | `services/posts.md` | The posts service contract, implementation, and test commands |
-| `tools/yaak.md` | Yaak setup, workspace, and Lesson 14 checks |
+| `services/comments.md` | The comments service contract, implementation, and test commands |
+| `tools/yaak.md` | Yaak setup, workspace, and Lessons 14 through 16 checks |
 
 ## Current position
 
-The current lesson is Lesson 14, Testing the Posts Service.
+The current lesson is Lesson 16, Quick Comments Test.
 
-The Lesson 13 implementation is complete. The posts service stores posts in memory, exposes `GET /posts` and `POST /posts`, and listens on port `4000`. Current work is manual testing with Yaak.
+Lessons 13 through 15 are complete. The posts service and comments service are implemented, and current work is manual verification of the comments routes with Yaak.
 
 ## Update rule
 
@@ -40,4 +41,4 @@ Keep planned work separate from observed code. Mark it as planned or next instea
 | `transcript.txt` | Sole pedagogical source for the course |
 | `blog/client` | React and Vite frontend |
 | `blog/posts` | Posts service |
-| `blog/comments` | Comments service setup and future implementation |
+| `blog/comments` | Comments service |

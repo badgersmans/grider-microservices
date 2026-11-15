@@ -15,7 +15,7 @@ When a lesson is implemented, record its transcript heading in the matching know
 
 ## Project facts
 
-This repository follows a microservices course project. The current lesson is Lesson 14, Testing the Posts Service.
+This repository follows a microservices course project. The current lesson is Lesson 16, Quick Comments Test.
 
 
 The repository has three separate projects:
@@ -24,10 +24,10 @@ The repository has three separate projects:
 | --- | --- | --- |
 | Client | `blog/client` | React frontend using Vite |
 | Posts | `blog/posts` | Express posts service on port `4000` |
-| Comments | `blog/comments` | Express service setup for the next course step |
+| Comments | `blog/comments` | Express comments service on port `4001` |
 ## API testing
 
-Lesson 14 uses Yaak for manual API testing. The Git synced workspace is `blog/yaak-workspace`.
+Yaak is the manual API client for Lessons 14 through 16. The Git synced workspace is `blog/yaak-workspace`.
 
 Workspace encryption is enabled. The encryption key stays in Bitwarden and must never be stored in the repository or knowledge base.
 
@@ -48,4 +48,4 @@ Run the posts service from `blog/posts` with `npm start`.
 
 Run the Vite client from `blog/client` with `npm run dev`.
 
-The comments service is not runnable until its `index.js` exists.
+Run the comments service from `blog/comments` with `npm start`.

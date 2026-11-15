@@ -72,4 +72,4 @@ There is currently no validation for a missing or non string `title`. That match
 
 ## Current verification
 
-Lesson 14 manually tests post creation and listing with Yaak before the course moves on to the comments service.
+Lesson 14 testing is complete. The current course step is the isolated comments service in `blog/comments/index.js`.

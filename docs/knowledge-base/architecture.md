@@ -13,7 +13,7 @@ Do not introduce unrelated architecture or implementation patterns ahead of the 
 | --- | --- | --- |
 | Frontend | `blog/client` | React application built and served by Vite |
 | Posts service | `blog/posts` | Creates and lists posts |
-| Comments service | `blog/comments` | Prepared project directory for the next service lesson |
+| Comments service | `blog/comments` | Creates and lists comments by post ID |
 | Course transcript | `transcript.txt` | Full lecture text and sequence |
 | API testing workspace | `blog/yaak-workspace` | Yaak requests synced with the course |
 
@@ -23,7 +23,7 @@ Do not introduce unrelated architecture or implementation patterns ahead of the 
 | --- | --- | --- | --- | --- |
 | Client | Vite default, usually `5173` | Browser UI | Browser memory | Vite starter UI is present; API calls are not wired yet |
 | Posts | `4000` | `GET /posts`, `POST /posts` | In memory | Implemented in `blog/posts/index.js` |
-| Comments | Planned as `4001` in the lesson | Planned comment routes | In memory in the course design | No `index.js` exists yet |
+| Comments | `4001` | `GET /posts/:id/comments`, `POST /posts/:id/comments` | In memory | Implemented; Lesson 16 quick test uses Yaak |
 
 ## Current request flow
 

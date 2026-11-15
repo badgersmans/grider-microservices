@@ -1,0 +1,36 @@
+type: http_request
+model: http_request
+id: rq_aawb2zoSQD
+createdAt: 2026-11-15T16:18:39.202643
+updatedAt: 2026-11-15T16:18:41.628983
+workspaceId: wk_evb7WiHnhz
+folderId: null
+authentication: {}
+authenticationType: null
+body: {}
+bodyType: null
+description: ''
+headers: []
+method: GET
+name: ''
+sortPriority: -1794758077614.0
+url: http://localhost:4001/posts/123/comments
+urlParameters: []
+settingSendCookies:
+  enabled: false
+  value: true
+settingStoreCookies:
+  enabled: false
+  value: true
+settingValidateCertificates:
+  enabled: false
+  value: true
+settingFollowRedirects:
+  enabled: false
+  value: true
+settingRequestTimeout:
+  enabled: false
+  value: 0
+settingHttpVersion:
+  enabled: false
+  value: auto
