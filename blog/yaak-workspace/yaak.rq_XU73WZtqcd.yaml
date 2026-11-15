@@ -1,0 +1,44 @@
+type: http_request
+model: http_request
+id: rq_XU73WZtqcd
+createdAt: 2026-11-15T15:58:12.995734
+updatedAt: 2026-11-15T15:59:41.542190
+workspaceId: wk_evb7WiHnhz
+folderId: null
+authentication: {}
+authenticationType: null
+body:
+  text: |-
+    {
+      "title": "First Post..."
+    }
+bodyType: application/json
+description: ''
+headers:
+- enabled: true
+  name: Content-Type
+  value: application/json
+  id: ePpiY0xTDD
+method: POST
+name: POST a post
+sortPriority: -1794758077614.0
+url: http://localhost:4000/posts
+urlParameters: []
+settingSendCookies:
+  enabled: false
+  value: true
+settingStoreCookies:
+  enabled: false
+  value: true
+settingValidateCertificates:
+  enabled: false
+  value: true
+settingFollowRedirects:
+  enabled: false
+  value: true
+settingRequestTimeout:
+  enabled: false
+  value: 0
+settingHttpVersion:
+  enabled: false
+  value: auto

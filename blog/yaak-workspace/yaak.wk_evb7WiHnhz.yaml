@@ -1,0 +1,19 @@
+type: workspace
+model: workspace
+id: wk_evb7WiHnhz
+createdAt: 2026-11-15T15:51:21.272883
+updatedAt: 2026-11-15T15:54:17.245006
+authentication: {}
+authenticationType: null
+description: ''
+headers: []
+name: Grider Microservices
+encryptionKeyChallenge: eUE0azNuQwEahwGgyGJBKIhBIc4klUBptRmkBcPr3KPsGlygAnCsk9vu/K2HZwWzVDZiZzI813LMv9+kO3XBAlbZRhZswl8wE7iknbn9eFk9kZGpDUqmAELI9v8I8bUT5y4=
+settingValidateCertificates: true
+settingFollowRedirects: true
+settingRequestTimeout: 0
+settingRequestMessageSize: 67108864
+settingDnsOverrides: []
+settingSendCookies: true
+settingStoreCookies: true
+settingHttpVersion: auto

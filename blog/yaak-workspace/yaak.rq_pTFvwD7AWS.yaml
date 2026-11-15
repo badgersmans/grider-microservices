@@ -1,0 +1,36 @@
+type: http_request
+model: http_request
+id: rq_pTFvwD7AWS
+createdAt: 2026-11-15T15:54:37.618016
+updatedAt: 2026-11-15T15:55:15.114727
+workspaceId: wk_evb7WiHnhz
+folderId: null
+authentication: {}
+authenticationType: null
+body: {}
+bodyType: null
+description: ''
+headers: []
+method: GET
+name: GET posts
+sortPriority: -1794758077614.0
+url: http://localhost:4000/posts
+urlParameters: []
+settingSendCookies:
+  enabled: false
+  value: true
+settingStoreCookies:
+  enabled: false
+  value: true
+settingValidateCertificates:
+  enabled: false
+  value: true
+settingFollowRedirects:
+  enabled: false
+  value: true
+settingRequestTimeout:
+  enabled: false
+  value: 0
+settingHttpVersion:
+  enabled: false
+  value: auto
