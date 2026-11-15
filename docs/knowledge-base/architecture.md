@@ -21,7 +21,7 @@ Do not introduce unrelated architecture or implementation patterns ahead of the 
 
 | Service | Port | Interface | Storage | Status |
 | --- | --- | --- | --- | --- |
-| Client | Vite default, usually `5173` | Browser UI | Browser memory | Vite starter UI is present; API calls are not wired yet |
+| Client | Vite default, usually `5173` | Browser UI | Browser memory | Completed React app uses native `fetch` for both service APIs |
 | Posts | `4000` | `GET /posts`, `POST /posts` | In memory | Implemented in `blog/posts/index.js` |
 | Comments | `4001` | `GET /posts/:id/comments`, `POST /posts/:id/comments` | In memory | Implemented; Lesson 16 quick test uses Yaak |
 
@@ -29,7 +29,12 @@ Do not introduce unrelated architecture or implementation patterns ahead of the 
 
 The posts service can be called directly at `http://localhost:4000`.
 
-The client currently renders its starter screen and does not call the posts service yet. Once the client is connected, the intended flow is:
+The client renders the completed React app and calls both services directly using native `fetch`.
+
+Its Vite entrypoint is `blog/client/src/index.jsx`.
+
+Browser cross origin access still depends on server CORS configuration, which is handled in a later transcript lesson.
+
 
 ```text
 Browser -> Vite React client -> posts service
