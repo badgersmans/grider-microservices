@@ -35,6 +35,10 @@ When a lesson changes a route, port, data shape, command, or service responsibil
 
 Keep planned work separate from observed code. Mark it as planned or next instead of describing it as implemented.
 
+## Commit preference
+
+When the user says to commit, commit all current worktree changes. Select every change explicitly with the repository commit workflow rather than narrowing the commit to agent authored lines.
+
 ## Sources
 
 | Source | Use |
