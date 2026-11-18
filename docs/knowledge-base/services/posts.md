@@ -70,6 +70,6 @@ There is currently no validation for a missing or non string `title`. That match
 
 `index.js` imports `body-parser`. The current `package.json` does not list it directly, although the lockfile contains it through the Express dependency tree. Keep this in mind if dependency installation becomes inconsistent.
 
-## Current verification
+## Course status
 
-Lesson 14 testing is complete. The current course step is the isolated comments service in `blog/comments/index.js`.
+The isolated posts implementation is complete. Lesson 31 adds the separate `event-bus` service. This service does not yet expose `POST /events`; event receiving is covered by a later transcript step.

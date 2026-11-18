@@ -20,6 +20,7 @@ Do not add unrelated architecture, frameworks, or lessons. Record any necessary 
 | `architecture.md` | Services, ports, responsibilities, and request flow |
 | `services/posts.md` | The posts service contract, implementation, and test commands |
 | `services/comments.md` | The comments service contract, implementation, and test commands |
+| `services/event-bus.md` | The event bus contract, implementation, and run command |
 | `tools/yaak.md` | Yaak setup, workspace, and Lessons 14 through 16 checks |
 
 ## Current position

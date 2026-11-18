@@ -78,4 +78,4 @@ There is no validation for missing or non string `content` in this lesson.
 
 ## Testing
 
-Lesson 16 uses the Yaak workspace at `blog/yaak-workspace` for manual requests. The next transcript step moves to the React application.
+Lesson 16 uses the Yaak workspace at `blog/yaak-workspace` for manual requests. The separate `event-bus` service is now present, but this comments service does not yet emit or receive events.

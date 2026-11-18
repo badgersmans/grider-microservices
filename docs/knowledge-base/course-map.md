@@ -17,14 +17,16 @@ The repository may use newer equivalent tooling. Vite is the current client tool
 | Posts Service Creation, Lesson 13 | Complete | `blog/posts/index.js` implements the first service |
 | Testing the Posts Service, Lesson 14 | Complete | Manual requests are stored in `blog/yaak-workspace` |
 | Implementing a Comments Service, Lesson 15 | Complete | `blog/comments/index.js` implements the isolated comments service |
-| Quick Comments Test, Lesson 16 | Current | Yaak requests test comment creation and retrieval |
-| Note on the React App | Next | The transcript introduces the React client before the next architecture problems |
+| Quick Comments Test, Lesson 16 | Complete | Yaak requests test comment creation and retrieval |
+| Event Bus Overview, Lesson 30 | Context available | `transcript.txt` describes the relay design |
+| A Basic Event Bus Implementation, Lesson 31 | Complete | `event-bus/index.js` implements the relay |
+| Emitting Events, Lesson 32 | Next | The next transcript step adds service event emission |
 
 ## Course architecture being built
 
-The application has a React client, a posts service, and a comments service. The first version stores data in memory rather than in a database.
+The application has a React client, posts and comments services, and a basic event bus. The first version stores service data in memory rather than in a database.
 
-The course later uses service communication patterns to connect comments with posts. That behavior is not part of the current posts service implementation.
+The event bus is implemented, but posts and comments do not yet emit or receive events in this repository snapshot. Those changes are planned in the next transcript steps.
 
 ## How to update this map
 

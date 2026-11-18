@@ -15,7 +15,7 @@ When a lesson is implemented, record its transcript heading in the matching know
 
 ## Project facts
 
-This repository follows a microservices course project. The current lesson is Lesson 16, Quick Comments Test.
+This repository follows a microservices course project. The current lesson is Lesson 31, A Basic Event Bus Implementation.
 
 
 The repository has three separate projects:
@@ -25,6 +25,10 @@ The repository has three separate projects:
 | Client | `blog/client` | React frontend using Vite |
 | Posts | `blog/posts` | Express posts service on port `4000` |
 | Comments | `blog/comments` | Express comments service on port `4001` |
+| Event Bus | `event-bus` | Express event relay on port `4005` |
+## Context files
+
+- [event-bus/AGENTS.md](event-bus/AGENTS.md): Event bus service conventions and commands.
 ## API testing
 
 Yaak is the manual API client for Lessons 14 through 16. The Git synced workspace is `blog/yaak-workspace`.
@@ -49,3 +53,5 @@ Run the posts service from `blog/posts` with `npm start`.
 Run the Vite client from `blog/client` with `npm run dev`.
 
 Run the comments service from `blog/comments` with `npm start`.
+
+Run the event bus from `event-bus` with `npm start`.
