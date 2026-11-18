@@ -36,6 +36,12 @@ The service creates posts and returns all posts. A post currently has only an `i
 | `GET` | `/posts` | None | All posts as a JSON object |
 | `POST` | `/posts` | JSON body with a string `title` | Created post with status `201` |
 
+## Event emission
+
+After storing a post, the service sends a `POST` request to `http://localhost:4005/events` with a `PostCreated` event. The event data contains the new post's `id` and `title`.
+
+The service uses Node's native `fetch` and checks `response.ok` because `fetch` does not reject automatically for HTTP error responses.
+
 Example request body:
 
 ```json
@@ -69,6 +75,10 @@ There is currently no validation for a missing or non string `title`. That match
 ## Dependency note
 
 `index.js` imports `body-parser`. The current `package.json` does not list it directly, although the lockfile contains it through the Express dependency tree. Keep this in mind if dependency installation becomes inconsistent.
+
+## CORS
+
+The service uses the `cors` middleware before its routes. It allows browser requests from the Vite client and handles CORS preflight requests. This implements the transcript's `Handling CORS Errors` lesson.
 
 ## Course status
 

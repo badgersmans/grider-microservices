@@ -39,6 +39,10 @@ Keep planned work separate from observed code. Mark it as planned or next instea
 
 When the user says to commit, commit all current worktree changes. Select every change explicitly with the repository commit workflow rather than narrowing the commit to agent authored lines.
 
+## HTTP client preference
+
+When course code uses Axios, convert it to Node or browser native `fetch` instead. Preserve JSON request headers, serialize request bodies with `JSON.stringify`, and check `response.ok` because `fetch` does not reject automatically for HTTP error responses. Do not add Axios dependencies unless the user explicitly overrides this preference.
+
 ## Sources
 
 | Source | Use |

@@ -76,6 +76,10 @@ The service returns the full comment array after creation instead of only the ne
 
 There is no validation for missing or non string `content` in this lesson.
 
+## CORS
+
+The service uses the `cors` middleware before its routes. It allows browser requests from the Vite client and handles CORS preflight requests. This implements the transcript's `Handling CORS Errors` lesson.
+
 ## Testing
 
 Lesson 16 uses the Yaak workspace at `blog/yaak-workspace` for manual requests. The separate `event-bus` service is now present, but this comments service does not yet emit or receive events.

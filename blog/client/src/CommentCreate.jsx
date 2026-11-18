@@ -6,16 +6,13 @@ const CommentCreate = ({ postId }) => {
   const onSubmit = async (event) => {
     event.preventDefault();
 
-    const response = await fetch(
-      `http://localhost:4001/posts/${postId}/comments`,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ content }),
-      }
-    );
+    const response = await fetch(`http://localhost:4001/posts/${postId}/comments`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ content }),
+    });
 
     if (!response.ok) {
       throw new Error(`Failed to create comment: ${response.status}`);

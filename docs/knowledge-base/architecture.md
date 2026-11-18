@@ -32,6 +32,7 @@ Do not introduce unrelated architecture or implementation patterns ahead of the 
 The posts and comments services can still be called directly at `http://localhost:4000` and `http://localhost:4001`.
 
 The client renders the React app and calls both services directly using native `fetch`.
+The posts and comments services use the `cors` middleware, so browser requests from the Vite client receive CORS headers and preflight responses.
 
 The event bus accepts service events at `http://localhost:4005/events`. It forwards the same JSON body to ports `4000`, `4001`, and `4002`.
 

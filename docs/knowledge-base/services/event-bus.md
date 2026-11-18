@@ -42,6 +42,6 @@ The relay uses Node's native `fetch`, so it has no Axios dependency. Each destin
 
 The three requests start independently. Non successful HTTP responses and network failures are logged. The route does not wait for all destinations before responding.
 
-The current posts and comments services do not yet expose `POST /events`, and the query service on port `4002` is not present in this repository snapshot. Fanout failures are expected until the later event emission and event receiving lessons are implemented.
+The posts service now emits `PostCreated` events to this relay. The posts and comments services do not yet expose `POST /events`, and the query service on port `4002` is not present in this repository snapshot. Fanout failures are expected until the later event receiving lessons are implemented.
 
 The service has no database or other persistent storage.
